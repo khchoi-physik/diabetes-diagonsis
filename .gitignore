@@ -1,0 +1,40 @@
+# Data
+data/
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# PyTorch
+*.pt
+*.pth
+*.ckpt
+
+# Data / outputs
+data/
+datasets/
+outputs/
+logs/
+runs/
+
+# OS junk
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+
+# HPC
+*.out
+*.err
+slurm-*.log
