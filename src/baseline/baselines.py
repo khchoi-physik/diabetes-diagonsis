@@ -11,12 +11,11 @@ def cramers_v(confusion_matrix):
     min_dim = min(confusion_matrix.shape) - 1
     return np.sqrt(chi2 / (n * min_dim))
 
-def baseline_model(data,features,random_state=8964):
 
-    train_data   = data[features].drop(columns = ['diagnosed_diabetes'])
-    train_target = data['diagnosed_diabetes']
 
-    train_data, valid_data, train_target, valid_target = train_test_split(train_data, train_target, test_size=0.2, random_state=random_state)
+
+
+def baseline_model(train_data, train_target, valid_data, valid_target, random_state=8964):
 
     log_clf   = LogisticRegression(max_iter=2000)
     rf_clf    = RandomForestClassifier(n_estimators=100, max_depth=10)
