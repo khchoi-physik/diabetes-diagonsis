@@ -1,4 +1,7 @@
 # Data
+catboost_info/
+
+
 data/
 stats_tools/
 # Python
